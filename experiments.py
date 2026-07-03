@@ -162,7 +162,7 @@ def exp4():
     L=Lbase; N=128; x=cell_centers(N,L)
     p0=Params(); eq=coexistence(p0)[0]
     xic=float(np.load(f'{FIGDIR}/xic.npy')[0])
-    cases=[('subcritical',0.7*xic),('near onset',1.02*xic),('supercritical',1.8*xic)]
+    cases=[('subcritical',0.7*xic),('near onset',1.0*xic),('supercritical',1.8*xic)]
     fig,axes=plt.subplots(2,3,figsize=(13,6.4))
     out={}
     seed=np.cos(6*np.pi*x/L)
